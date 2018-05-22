@@ -45,10 +45,41 @@ guess_number()
 # happen when it finishes.
 
 # Example:
+
+# Loops over the numbers 1-5 and prints them out.
 for i in range(1, 5):
     print(i)
 else:
     print('The for loop is over')
 
+# Break: Used to stop loops (for, while) before they normally would. When this
+# happens the else statement (if exists) wont be executed.
 
+# Example:
 
+# While true, input in a string and it'll count the number of characters in the
+# string. If you type in quit it will quit out of the loop.
+while True:
+    s = input('Enter something : ')
+    if s == 'quit':
+        break
+    print('Length of the string is', len(s))
+print('Done')
+
+# Continue: Used to skip the rest of the statements in the current loop and
+# move on to the next iteration of that loop. Works with both for and while
+# loops
+
+# Example:
+
+# While true, input a string. If the string is less than three characters don't
+# process it. If not, skip the rest of the statements.
+while True:
+    s = input("Enter something : ")
+
+    if s = 'quit':
+        break
+    if len(s) < 3:
+        print("Too small dude.")
+        continue
+    print('Input is of sufficient length')
