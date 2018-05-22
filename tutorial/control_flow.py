@@ -7,13 +7,20 @@
 # good way of doing this is to set the parameter to a variable defined as
 # "True" and then set it to false within the function when you want it to stop.
 
-# Ex.
+# Example:
+
+# import random because I want to have it be more of a game than to set the
+# same answer every time
 import random
 
 def guess_number():
+    #define the number to be guessed and have it be random between 1 and 10
     number = random.randint(1,10)
+    # Set the condition for the while loop
     running = True
 
+    # While the program is running, guess a number between 1 and 10. Should
+    # give feedback as to whether or not that number is too high or too low
     while running:
         guess = int(input('Guess a number between 1 and 10 : '))
 
@@ -26,7 +33,8 @@ def guess_number():
             print("Nope, it's a little lower than that.")
         else:
             print("Not entirely sure how we got here.", guess)
+    # End the loop
     else:
         print("The guessing game is now over.")
-
+# Call the function
 guess_number()
