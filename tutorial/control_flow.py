@@ -38,3 +38,17 @@ def guess_number():
         print("The guessing game is now over.")
 # Call the function
 guess_number()
+
+# For Loops: iterates over a sequence of objects. Basically it executes code
+# for each value for 'i'. The else statement is optional, it will always be
+# executed after the for loop completes. Use it when you want something else to
+# happen when it finishes.
+
+# Example:
+for i in range(1, 5):
+    print(i)
+else:
+    print('The for loop is over')
+
+
+
