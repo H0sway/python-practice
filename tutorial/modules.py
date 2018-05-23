@@ -62,3 +62,22 @@ __version__ = '0.1'
 # import mymodule
 # mymodule.say_hi()
 # print('Version', mymodule.__version__)
+
+# dir() functions are used to get the names of everything within an object.
+# This includes modules. They can take an argument and will look for a module with the same
+# name. If given an argument it will return the names of everything within that
+# module. Otherwise it will use the current module. This includes functions,
+# variables, and even other modules.
+
+# Example of uses:
+
+# dir() => Will return a list of names for the current module
+# dir(sys) => Will return a list of names for the sys module
+
+# When in the console follow these commands to test things out:
+
+# >>> import modules // This will import this file. Make sure you're in this directory in your terminal!
+# >>> dir() // Returns all names
+# >>> dir(modules) // Returns all the names within modules
+# >>> dir(modules.sys) // Returns all the names within the sys module that's
+# inside the modules module. Moduleception!!!
