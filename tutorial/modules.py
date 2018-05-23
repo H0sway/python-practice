@@ -81,3 +81,7 @@ __version__ = '0.1'
 # >>> dir(modules) // Returns all the names within modules
 # >>> dir(modules.sys) // Returns all the names within the sys module that's
 # inside the modules module. Moduleception!!!
+
+# Packages are just modules with an __init__.py file. They're used to structure
+# modules. For example, an __init__.py file will be present inside every module
+# except the very lowest down the hierarchy.
